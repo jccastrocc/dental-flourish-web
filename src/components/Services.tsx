@@ -34,8 +34,10 @@ const Services = () => {
     <section id="services" className="py-24 bg-[#E0E0E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-3xl font-bold text-[#49515C] sm:text-4xl">Our Services</h2>
-          <p className="mt-4 text-lg text-[#5F6773]">
+          <h2 className="text-3xl font-bold text-[#49515C] sm:text-4xl transition-all duration-300 hover:scale-[1.02]">
+            Our Services
+          </h2>
+          <p className="mt-4 text-lg text-[#5F6773] transition-all duration-300 hover:translate-y-[-2px]">
             Comprehensive dental care tailored to your needs
           </p>
         </div>
@@ -44,17 +46,19 @@ const Services = () => {
           {services.map((service) => (
             <Card 
               key={service.title}
-              className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white group animate-fade-up"
+              className="border-none shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-white group animate-fade-up cursor-pointer"
               style={{ animationDelay: `${service.delay}ms` }}
             >
               <CardHeader>
-                <div className="w-12 h-12 bg-[#97B4CD]/20 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-6 h-6 text-[#49515C]" />
+                <div className="w-12 h-12 bg-[#97B4CD]/20 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-[#97B4CD]/30 transition-all duration-500">
+                  <service.icon className="w-6 h-6 text-[#49515C] group-hover:text-[#3A4149] transition-colors duration-500" />
                 </div>
-                <CardTitle className="text-xl font-semibold text-[#49515C]">{service.title}</CardTitle>
+                <CardTitle className="text-xl font-semibold text-[#49515C] group-hover:text-[#3A4149] transition-colors duration-300">
+                  {service.title}
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-[#5F6773]">
+                <CardDescription className="text-[#5F6773] group-hover:text-[#49515C] transition-colors duration-300">
                   {service.description}
                 </CardDescription>
               </CardContent>
