@@ -1,5 +1,5 @@
 
-import { Sparkles, Tooth, Stethoscope, Heart } from "lucide-react";
+import { Sparkles, Stethoscope, Heart, UserCog } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
@@ -9,7 +9,7 @@ const services = [
     description: "Professional whitening treatments for a brighter, more confident smile.",
   },
   {
-    icon: Tooth,
+    icon: UserCog,
     title: "Dental Implants",
     description: "Permanent, natural-looking solutions for missing teeth.",
   },

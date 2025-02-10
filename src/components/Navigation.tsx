@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Motion, Menu, X } from "lucide-react";
+import { Stethoscope, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -19,7 +19,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Motion className="h-8 w-8 text-dental-blue" />
+            <Stethoscope className="h-8 w-8 text-dental-blue" />
             <span className="ml-2 text-xl font-semibold">DentalCare</span>
           </div>
           
